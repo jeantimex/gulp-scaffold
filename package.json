@@ -1,0 +1,28 @@
+{
+  "name": "laiproject",
+  "version": "1.0.0",
+  "description": "Laioffer project website",
+  "private": true,
+  "scripts": {
+    "dev": "gulp dev",
+    "clean": "gulp clean",
+    "test": "gulp test"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.2",
+    "del": "^2.2.2",
+    "eslint": "^3.10.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-data": "^1.2.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-nunjucks-render": "^2.0.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-scss-lint": "^0.4.0",
+    "gulp-sourcemaps": "^1.9.1",
+    "jshint": "^2.9.4",
+    "jshint-stylish": "^2.2.1",
+    "run-sequence": "^1.2.2"
+  }
+}
