@@ -1,10 +1,10 @@
 {
-  "name": "laiproject",
+  "name": "gulp-scaffold",
   "version": "1.0.0",
-  "description": "Laioffer project website",
-  "private": true,
+  "description": "Scaffold website using gulp",
   "scripts": {
-    "dev": "gulp dev",
+    "build": "gulp --prod",
+    "dev": "gulp",
     "clean": "gulp clean",
     "test": "gulp test"
   },
