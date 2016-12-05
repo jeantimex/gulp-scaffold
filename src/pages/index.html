@@ -7,15 +7,28 @@
 {% block title %}index{% endblock %}
 
 <!-- =================== -->
+<!--   styles block      -->
+<!-- =================== -->
+{% block styles %}
+<link href="css/index.css" rel="stylesheet">
+{% endblock %}
+
+<!-- =================== -->
+<!--   scripts block     -->
+<!-- =================== -->
+{% block scripts %}
+<script src="js/index.js"></script>
+{% endblock %}
+
+<!-- =================== -->
 <!--     body block      -->
 <!-- =================== -->
-{% block content %}
+{% block body %}
 
 <!-- navigation partial -->
 {% include "partials/navigation.tmpl" %}
 
-
-Hello World!
+<h1>Hello World!</h1>
 
 <!-- footer partial -->
 {% include "partials/footer.tmpl" %}
