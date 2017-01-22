@@ -1,23 +1,23 @@
-var gulp        = require('gulp'),
-    config      = require('../config'),
-    runSequence = require('run-sequence');
+import gulp from 'gulp';
+import config from '../config';
+import runSequence from 'run-sequence';
 
-gulp.task('default', function (callback) {
-    if (config.env === 'dev') {
-        runSequence(
-            ['clean', 'lint:js'],
-            ['sass', 'nunjucks'],
-            ['browserSync', 'watch'],
-            callback
-        )
-    }
-    else if (config.env === 'prod') {
-        runSequence(
-            ['clean', 'lint:js'],
-            ['sass', 'nunjucks'],
-            'useref',
-            'sitemap',
-            callback
-        )
-    }
+gulp.task('default', (callback) => {
+  if (config.env === 'dev') {
+    runSequence(
+      ['clean', 'lint:js'],
+      ['sass', 'nunjucks'],
+      ['browserSync', 'watch'],
+      callback
+    )
+  }
+  else if (config.env === 'prod') {
+    runSequence(
+      ['clean', 'lint:js'],
+      ['sass', 'nunjucks'],
+      'useref',
+      'sitemap',
+      callback
+    )
+  }
 });
