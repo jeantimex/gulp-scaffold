@@ -1,10 +1,10 @@
-var environment = require('../env');
+import environment from '../env';
 
-var env  = environment.env,
-    src  = environment.src,
-    dest = environment.dest;
+const env  = environment.env,
+      src  = environment.src,
+      dest = environment.dest;
 
-var config = {
+const config = {
     env: env,
     src: src,
     dest: dest,
@@ -46,7 +46,7 @@ var config = {
         src: dest + '/**/*.html',
         dest: dest,
         opts: {
-            transformPath: function(path) {
+            transformPath: (path) => {
                 path = path.replace(dest + '/node_modules/', dest + '/../node_modules/');
                 path = path.replace(dest + '/js/', src + '/js/');
                 return path;
@@ -55,4 +55,4 @@ var config = {
     },
 };
 
-module.exports = config;
+export default config;

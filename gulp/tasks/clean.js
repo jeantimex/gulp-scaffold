@@ -1,7 +1,7 @@
-var config = require('../config'),
-    gulp   = require('gulp'),
-    del    = require('del');
+import config from '../config';
+import gulp from 'gulp';
+import del from 'del';
 
-gulp.task('clean', function () {
-    return del.sync([config.dest])
+gulp.task('clean', () => {
+  return del.sync([config.dest])
 });
