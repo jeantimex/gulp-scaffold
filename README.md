@@ -1,5 +1,5 @@
 # gulp scaffold
-Scaffold websites using Gulp - 7
+Scaffold websites using Gulp - 8
 
 ## Development phase
 ```
